@@ -1,6 +1,33 @@
 /* Global Style */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+/* Title Style */
+#navbar header {
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+/* Navigation Style */
+#navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar li {
+    padding: 1rem;
+    border: 0.5px solid black;
+}
+
+#navbar ul {
+    list-style: none;
+    border: 0.5px solid black;
+    height: 30vh;
+    overflow-y: scroll;
 }
 
 #main-doc {
@@ -9,15 +36,27 @@
     margin-right: auto;
 }
 
+p {
+    margin: 1rem 0;
+}
+
 code {
     display: block;
     margin-bottom: 1rem;
-    width: 80vw;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Section Style */
+.main-section {
+    margin: 2rem 1rem;
+}
+
+.main-section ul {
+    margin-left: 2rem;
+}
+
 .main-section ul li {
     margin-bottom: 1rem;
 }
@@ -28,4 +67,36 @@ code {
 
 .main-section ul li ul {
     margin-top: 1rem;
+}
+
+/* Reference Style */
+
+#Reference ul {
+    margin-top: 1rem;
+}
+
+#Reference {
+    padding-bottom: 4rem;
+}
+
+/* Responsive Layout */
+
+@media screen and (min-width:768px) {
+    body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbar {
+        height: 100vh;
+        margin-right: 2rem;
+    }
+
+    #navbar header {
+        height: 10rem;
+    }
+
+    #navbar ul {
+        height: calc(100vh - 10rem);
+    }
 }
