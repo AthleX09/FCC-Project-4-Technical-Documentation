@@ -1,4 +1,7 @@
 /* Global Style */
+* {
+    box-sizing: border-box;
+}
 
 #main-doc {
     width: 90%;
